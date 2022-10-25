@@ -11,7 +11,186 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
+
+    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" class="input">
+      <div class="input__container">
+        <fieldset>
+          <legend>Personal information</legend>
+          <form action="https://mate-academy-form-lesson.herokuapp.com/create-application">
+            <label class="input___label">
+              Surname: <input type="text" autocomplete="off" required>
+            </label>
+
+            <label class="input___label">
+              Name: <input type="text" autocomplete="off" required>
+            </label>
+
+            <label class="input___label">
+              How old are You? <input type="text" value="12" min="1"
+              max="100" >
+            </label>
+
+            <label class="input___label">
+              Full date of birth: <input type="date" placeholder="mm/dd/yyyy">
+            </label>
+
+            <label class="input___label">
+              I accept the term of the agreement <input type="checkbox">
+            </label>
+          </form>
+        </fieldset>
+      </div>
+      <div class="input__container">
+        <fieldset>
+          <legend>Registation</legend>
+          <label class="input___label">
+            E-mail: <input type="email" placeholder="email@example.com" required>
+          </label>
+
+          <label class="input___label">
+            Password: <input type="password" minlength="5" maxlength="10"
+            required>
+          </label>
+        </fieldset>
+      </div>
+      <div class="input__container">
+        <fieldset>
+          <legend>An intresting fact about you!</legend>
+          <div class="input___label">
+            Do you love cats?
+
+            <label>
+              <input type="radio" name="cat" value="Yes">Yes
+            </label>
+
+            <label>
+              <input type="radio" name="cat" value="No">No
+            </label>
+          </div>
+
+          <label class="input___label">
+            What is your favorite color? <input type="color">
+          </label>
+
+          <label class="input___label">
+            What time do you go to bed? <input type="time">
+          </label>
+
+          <label class="input___label">
+            What are you favorite brand of cars?
+            <select id="cars" name="cars">
+              <option value="volvo">BMW</option>
+              <option value="saab">Audi</option>
+              <option value="fiat">Lada</option>
+            </select>
+          </label>
+
+          <label class="input___label">
+            How do you rate our work? <input type="range">
+          </label>
+
+
+        </fieldset>
+      </div>
+      <div class="input__container">
+        <fieldset>
+          <legend>Additional info:</legend>
+          <form action="https://mate-academy-form-lesson.herokuapp.com/create-application">
+            <label class="input___label">
+              Comments: <input type="text" autocomplete="off" multiple>
+            </label>
+
+            <label class="input___label">
+              Would you recommend us? <input type="text" autocomplete="off">
+            </label>
+          </form>
+        </fieldset>
+      </div>
+    </form>
+
+
+
+
+
+    <!-- <section class="info">
+      <div class="info__wrap_inside">
+        <h3 class="info__title input___label">Personal information</h3>
+
+        <form action="https://mate-academy-form-lesson.herokuapp.com/create-application">
+          <label class="input___label">
+            Surname: <input type="text" autocomplete="off">
+          </label>
+
+          <label class="input___label">
+            Name: <input type="text" autocomplete="off">
+          </label>
+
+          <label class="input___label">
+            How old are You? <input type="text" value="112" min="1"
+            max="100" >
+          </label>
+
+          <label class="input___label">
+            Full date of birth: <input type="date" placeholder="mm/dd/yyyy">
+          </label>
+
+          <label class="input___label">
+            I accept the term of the agreement <input type="checkbox">
+          </label>
+        </form>
+      </div>
+    </section>
+
+    <section class="info">
+      <div class="info__wrap_inside">
+        <h3 class="info__title input___label">Registation</h3>
+
+        <form action="https://mate-academy-form-lesson.herokuapp.com/create-application">
+          <label class="input___label">
+            E-mail: <input type="email" placeholder="email@example.com">
+          </label>
+
+          <label class="input___label">
+            Password: <input type="password">
+          </label>
+        </form>
+      </div>
+    </section>
+
+    <section class="info">
+      <div class="info__wrap_inside">
+        <h3 class="info__title input___label">An intresting fact about you!</h3>
+
+        <form action="https://mate-academy-form-lesson.herokuapp.com/create-application">
+          <div class="input___label">
+            Do you love cats?
+
+            <label>
+              <input type="radio" name="cat" value="Yes">Yes
+            </label>
+
+            <label>
+              <input type="radio" name="cat" value="No">No
+            </label>
+          </div>
+
+          <label class="input___label">
+            Password: <input type="text">
+          </label>
+        </form>
+      </div>
+    </section>
+
+    <section class="info">
+      <h3 class="info__title">Additional info:</h3>
+
+      <form action="https://mate-academy-form-lesson.herokuapp.com/create-application">
+
+      </form>
+    </section> -->
+
+    <button type="submit">Submit</button>
+
     <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>

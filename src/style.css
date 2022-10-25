@@ -1,1 +1,8 @@
-/* styles go here */
+.input__container {
+  margin-bottom: 20px;
+}
+
+.input___label {
+  display: block;
+  margin-bottom: 10px;
+}
