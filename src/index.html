@@ -11,11 +11,7 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-
-    <form
-      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
-      class="input"
-    >
+    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" class="input" method="post">
       <div class="input__container">
         <fieldset>
           <legend>Personal information</legend>
@@ -33,7 +29,7 @@
               <input
                 type="text" value="12"
                 max="100"
-                >
+              >
             </label>
 
             <label class="input___label">
@@ -59,7 +55,7 @@
             <input
               type="password" minlength="5"
               required
-              >
+            >
           </label>
         </fieldset>
       </div>
@@ -73,7 +69,7 @@
               <input
                 type="radio" name="cat"
                 value="Yes"
-                >
+              >
               Yes
             </label>
 
@@ -117,12 +113,20 @@
           <form action="https://mate-academy-form-lesson.herokuapp.com/create-application">
             <label class="input___label">
               Comments:
-              <textarea name="comment" cols="20"
-                rows="2"></textarea>
+              <textarea
+                name="comment"
+                cols="20"
+                rows="2"
+              >
+              </textarea>
             </label>
 
             <label class="input___label">
-              Would you recommend us? <input type="text" maxlength="10" >
+              Would you recommend us?
+              <select id="rec" name="rec">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+              </select>
             </label>
           </form>
         </fieldset>
