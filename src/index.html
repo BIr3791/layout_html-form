@@ -21,12 +21,19 @@
           <legend>Personal information</legend>
           <label class="input___label">
             Surname:
-            <input type="text" autocomplete="off">
+            <input type="text"
+               autocomplete="off"
+               name="Surname"
+            >
           </label>
 
           <label class="input___label">
             Name:
-            <input type="text" autocomplete="off">
+            <input
+              type="text"
+              autocomplete="off"
+              name="first_name"
+            >
           </label>
 
           <label class="input___label">
@@ -35,20 +42,22 @@
               type="text"
               value="12"
               max="100"
+              name="old"
             >
           </label>
 
           <label class="input___label">
             Full date of birth:
-            <input type="date">
+            <input type="date" name="birth">
           </label>
 
           <label class="input___label">
             I accept the term of the agreement
-            <input type="checkbox">
+            <input type="checkbox" name="agrees">
           </label>
         </fieldset>
       </div>
+      
       <div class="input__container">
         <fieldset>
           <legend>Registation</legend>
@@ -56,6 +65,7 @@
             E-mail:
             <input
               type="email"
+              name="e-mail"
               placeholder="email@example.com"
               required
             >
@@ -65,6 +75,7 @@
             Password:
             <input
               type="password"
+              name="password"
               minlength="5"
               required
             >
@@ -79,7 +90,7 @@
             <label>
               <input
                 type="radio"
-                name="cat"
+                name="love-cat"
                 value="Yes"
               >
               Yes
@@ -88,7 +99,7 @@
             <label>
               <input
                 type="radio"
-                name="cat"
+                name="dont-love-cat"
                 value="No"
               >
               No
@@ -97,12 +108,12 @@
 
           <label class="input___label">
             What is your favorite color?
-            <input type="color">
+            <input type="color" name="favorite-color">
           </label>
 
           <label class="input___label">
             What time do you go to bed?
-            <input type="time">
+            <input type="time" name="time-for-sleep">
           </label>
 
           <label class="input___label">
@@ -116,7 +127,7 @@
 
           <label class="input___label">
             How do you rate our work?
-            <input type="range">
+            <input type="range" name="range">
           </label>
         </fieldset>
       </div>
@@ -135,9 +146,9 @@
 
             <label class="input___label">
               Would you recommend us?
-              <select id="rec" name="rec">
+              <select id="rec" name="recommend">
                 <option value="yes">Yes</option>
-                <option value="no">Yes</option>
+                <option value="no">No</option>
               </select>
             </label>
           </form>
